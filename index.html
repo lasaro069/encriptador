@@ -41,6 +41,10 @@ EXTRAS:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allerta&family=Montserrat:wght@300&family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    
     <title>Encriptador de Mensajes</title>
 </head>
 
@@ -52,28 +56,47 @@ EXTRAS:
 
     <main class="main">
 
-        <div class="contenedor-principal">
+        <!-- <div class="contenedor-principal">
 
-            <div class="contenedor-encriptdor">
-                <label for="">Ingresa el texto</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí:"></textarea>
+            <div class="contenedor-encriptador">
+                <div class="titulo-texto">
+                    <h3>Ingresa el texto</h3>
+                </div>
+                <div class="area-texto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí:"></textarea>
+                    
+                </div>
                 <div class="contenedor-botones">
                     <button class="boton-encriptar" onclick="encriptarMensaje">Encriptar</button>
                     <button class="boton-desencriptar" onclick="desencriptar-mensaje">Desencriptar</button>
                 </div>
             </div>
     
-            <div>
+            <div class="contenedor-respuesta">
                 <textarea name="" id="" cols="30" rows="10" placeholder="No hay texto para traducir"></textarea>
             </div>
     
     
-        </div>
+        </div> -->
+        
+        <form action="">
+            <label for="">Ingrese el Mensaje</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+            
+            <div class="botones">
+                <input type="submit" value="Encriptar" class="boton-encriptar">
+            
+                <input type="submit" value="Desencriptar" class="boton-desencriptar">
+                
+            </div>
+        </form>
+        
+        
 
     </main>
 
     <footer>
-        <p>Luis Santos - 2024</p>
+        <p class="text-footer">Luis Santos - 2024</p>
     </footer>
 
     <script src="/app.js"></script>
