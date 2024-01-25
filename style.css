@@ -1,7 +1,6 @@
 html{
     background: linear-gradient(#EBE8E8, #F9F6F6);
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
 }
 
 body{
@@ -9,70 +8,49 @@ body{
 }
 
 header{
+    margin-top: 5px;
+}
+
+hr{
+    
 }
 
 .contenedor-principal{
-    margin: 0 auto;
-    padding: 10px;
+    display: flex;
+    height: 590px;
 }
 
-.contenedor-principal div{
-    display: inline-block;
-    text-align: center;
-    width: 40%;
-}
+/*    ESTILOS PARA EL FORMULARIO DE LA IZQUIERDA    */
 
-.contenedor-encriptador{
-    border: 2px solid blue;
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-.contenedor-botones{
-    border: 2px solid blue;
-    
-}
-
-.contenedor-respuesta{
-    border: 2px solid black;
-    
-}
-
-form{
-    width: 50%;
+.caja-ingreso{
+    width: 60%;
     
 }
 
 form label{
     width: 100%;
     display: block;
-    margin: 15px 15px;
+    margin: 5px 5px;
     font-size: 30px;
     font-weight: bold;
-    text-align: center
+    text-align: center;
 }
 
-textarea{
+#ingreso{
     display: block;
     background-color:azure;
-    width: 98%;
-    height: 400px;
-    margin: 10px 10px;
+    width: 95%;
+    height: 450px;
+    margin: 10px 20px;
     font-family: monospace;
     font-size: 20px;
-    text-align: center;
+    text-align:left;
     border: 1px solid gray;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px 3px silver;
-    
-/*    padding: 10px 15px;
-    margin: 10px 10px 10px 10px; */
+    box-shadow: 3px 3px 3px 3px silver;    
 }
 
-form div{
+.botones{
     display: block;
     text-align: center;
     font-size: 20px;
@@ -80,12 +58,13 @@ form div{
 }
 
 .botones input{
-    border-radius: 20px;
-    background-color: cadetblue;
+    border-radius: 30px;
+    background: #CFCCCC;
     width: 45%;
     margin: 0 10px;
-    padding: 20px;
+    padding: 10px;
     font-size: 40px;
+    color: #2A1E93;
     font-weight: bold;
     box-sizing: border-box;
     
@@ -95,22 +74,75 @@ form div{
 }
 
 .boton-encriptar:hover, .boton-desencriptar:hover{
-    background: cornflowerblue;
+    background: #2A1E93;
+    color: #CFCCCC;
     transform: scale(1.1);
 }
 
-.boton-desencriptar{
+
+/*    ESTILOS PARA EL FORMULARIO DE LA DERECHA    */
+
+
+.caja-respuesta{
+    width: 40%;
+    display: block;
 }
 
+#salida{
+    background-color:azure;
+    width: 60%;
+    height: 500px;
+    margin-left: 160px;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px silver;
+   
+}
+
+.copiar{
+    display:block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton-copiar{
+    border-radius: 10px;
+    background-color: ghostwhite;
+    width: 35%;
+    margin-left: 100px;
+    padding: 1px;
+    font-size: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+    
+    cursor: pointer;
+    transition: 700ms;
+    
+}
+
+.boton-copiar:hover{
+    background: #2A1E93;
+    color: antiquewhite;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
 footer{
-    padding: 0px ;
     background-color: black;
     color: antiquewhite;
     width: 100%;
     height: 40px;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-top: 10px;
 }
 
 .text-footer{
