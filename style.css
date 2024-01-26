@@ -14,17 +14,13 @@ header{
 }
 
 header img{
-    width: 120px;
+    width: 180px;
 
-}
-
-hr{
-    
 }
 
 .contenedor-principal{
     display: flex;
-    height: 600px;
+    height: 550px;
 }
 
 /*    ESTILOS PARA EL FORMULARIO DE LA IZQUIERDA    */
@@ -39,7 +35,7 @@ hr{
     background: #EBE8E8;
     border: none;
     width: 95%;
-    height: 500px;
+    height: 450px;
     margin: 5px 20px;
     font-family: monospace;
     font-size: 20px;
@@ -84,7 +80,7 @@ hr{
     background-color: aliceblue;
     border-radius: 20px;
     width: 30%;
-    height: 590px;
+    height: 540px;
     margin-left: 30px;
     box-shadow: 3px 3px 3px 3px silver;
 }
@@ -92,7 +88,7 @@ hr{
 #salida{
     background-color:aliceblue;
     width: 60%;
-    height: 500px;
+    height: 460px;
     margin-left: 90px;
     margin-top: 10px;
     font-family: monospace;
@@ -115,7 +111,6 @@ hr{
     border-radius: 10px;
     background-color: ghostwhite;
     width: 50%;
-    margin-left: 00px;
     padding: 1px;
     font-size: 30px;
     font-weight: bold;
@@ -137,7 +132,7 @@ footer{
     color: antiquewhite;
     width: 100%;
     height: 40px;
-    position: absolute;
+    position:fixed;
     margin-top: 10px;
 }
 
@@ -148,7 +143,15 @@ footer{
 
 /*    MODO RESPONSIVE    */
 
-@media screen and(max-width: 480px){
-  
 
+@media (min-width: 768px) {
+    header img{
+        width: 120px;
+    }
+}
+
+@media (min-width: 480px) {
+    header img{
+        width: 60px;
+    }
 }
