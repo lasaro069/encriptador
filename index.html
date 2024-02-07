@@ -53,8 +53,10 @@ EXTRAS:
 <body>
 
     <header class="header">
+       <div class="alura">
         <img class="imagen" src="/images/Logo.png" alt="Logo Alura">
-        <hr size="5px" color="#2A1E93" />
+        <hr size="5px" color="#2A1E93" />           
+       </div>
     </header>
 
     <main class="main">
@@ -64,13 +66,17 @@ EXTRAS:
 
             <form class="caja-ingreso" action="">
 <!--                <label for="">Ingrese el Mensaje</label> -->
-                <textarea name="" id="ingreso" cols="30" rows="10" placeholder="Ingresa el texto aquí - solo letras minúsculas y sin acentos"></textarea>
+               <div class="textarea">
+                <textarea name="" id="ingreso" cols="65" rows="60" placeholder="Ingresa el texto aquí - solo letras minúsculas y sin acentos"></textarea>                   
+               </div>
 
-                <div class="botones">
+                <div class="encriptar">
                     <input type="submit" value="Encriptar" class="boton-encriptar">
-
+                </div>
+                   
+                <div class="desencriptar">
                     <input type="submit" value="Desencriptar" class="boton-desencriptar">
-
+                    
                 </div>
             </form>
 
