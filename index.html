@@ -62,35 +62,30 @@ EXTRAS:
     <main class="main">
 
   
-        <div class="contenedor-principal">
-
-            <form class="caja-ingreso" action="">
-<!--                <label for="">Ingrese el Mensaje</label> -->
-               <div class="textarea">
-                <textarea name="" id="ingreso" cols="65" rows="60" placeholder="Ingresa el texto aquí - solo letras minúsculas y sin acentos"></textarea>                   
-               </div>
-
-                <div class="encriptar">
-                    <input type="submit" value="Encriptar" class="boton-encriptar">
+   
+        <form class="caja-encriptador">
+            <div class="cajas entrada">
+                <div class="entrada-texto">
+                    <textarea name="entrada" id="" cols="120" rows="32" class="text-entrada">Ingrese el texto aquí</textarea>
                 </div>
-                   
-                <div class="desencriptar">
-                    <input type="submit" value="Desencriptar" class="boton-desencriptar">
-                    
+                <div class="caja-encriptar">
+                    <input type="submit" value="Encriptar" class="boton boton-encriptar">
                 </div>
-            </form>
-
-            <form class="caja-respuesta" action="">
-                <textarea name="" id="salida" cols="30" rows="10" placeholder="Texto de Salida"></textarea>
-
-                <div class="copiar">
-                    <input type="submit" value="Copiar Texto" class="boton-copiar">
+                <div class="caja-desencriptar">
+                    <input type="submit" value="Desencriptar" class="boton boton-desencriptar">           
                 </div>
-                
-            </form>
+            </div>
+            <div class="cajas salida">
+                <div class="salida-texto">
+                    <textarea name="" id="" cols="60" rows="32" class="text-salida"></textarea>
+                </div>
+                <div class="caja-copiar">
+                    <input type="submit" value="Copiar Texto" class=" boton copiar">
+                </div>
+            </div>
+        </form>
         
-        </div>
-        
+             
 
     </main>
 
